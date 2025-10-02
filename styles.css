@@ -1,0 +1,60 @@
+/* Mobile (portrait) - mobile-first */
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    background: #4f70bd;
+    background: linear-gradient(
+        45deg,
+        rgba(79, 112, 189, 1) 0%,
+        rgba(103, 52, 155, 1) 50%,
+        rgba(79, 112, 189, 1) 100%
+    );
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-img {
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.presentation {
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+/* Mobile (paysage) et petits écrans */
+@media (min-width: 481px) {
+    /* Tes styles ici */
+}
+
+/* Tablettes (768px et +) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .container-left {
+        width: 30%;
+    }
+    .container-right {
+        width: 70%;
+    }
+}
+
+/* Petits écrans desktop (1024px et +) */
+@media (min-width: 1024px) {
+    /* Tes styles ici */
+}
+
+/* Grands écrans desktop (1200px et +) */
+@media (min-width: 1200px) {
+    /* Tes styles ici */
+}
