@@ -15,46 +15,263 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+
+    .container-left {
+        background: rgba(255,255,255,0.2);
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        header {
+            margin: 10px;
+            margin-bottom: 20px;
+
+            .profil-img {
+                width: 180px;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+
+            .presentation {
+                border: 3px solid white;
+                border-radius: 20px;
+                padding: 15px;
+                padding-top: 100px;
+                margin-top: -100px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .contact-info {
+            margin: 10px;
+            display: grid;
+            gap: 10px;
+
+            .contact-info_block {
+                display: flex;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 20px;
+                padding: 10px;
+                margin: 0 20px;
+                
+                i {
+                    margin-right: 10px;
+                }
+                
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        
+        .languages {
+            margin: 10px;
+            
+            .language {
+                text-align: start;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                
+                p {
+                    margin: 0;
+                    margin-right: 10px;
+                    min-width: 120px
+                }
+            }
+        }
+        
+        .loisirs {
+            margin: 10px;
+            
+            .loisirs-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 20px;
+                max-width: calc((55px * 3) + (20px * 2));
+                margin: 0 auto;
+                
+                i {
+                    font-size: 44px;
+                }
+            }
+        }
+    }
+        
+    .wave {
+        margin: -10px;
+    }
+
+    .container-right {
+        margin: 0 -10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+
+        .competences,
+        .experience,
+        .formation {
+            margin: 10px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-radius: 50px;
+            background: #4f70bd;
+            background: linear-gradient(
+                45deg,
+                rgba(79, 112, 189, 1) 0%,
+                rgba(103, 52, 155, 1) 50%,
+                rgba(79, 112, 189, 1) 100%
+            );
+            color: white;
+            padding: 10px;
+        }
+
+
+        .hardskills {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+            display: grid;
+            gap: 20px;
+
+            .hardskills_block {
+                display: flex;
+                align-items: center;
+                text-align: start;
+
+                img {
+                    margin-right: 20px;
+                    width: 40px;
+                }
+            }
+        }
+
+
+        .softskills {
+            list-style-type: none;
+            margin: 20px;
+            padding: 0;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .softskills_block {
+                &:last-child {
+                    grid-column: span 2;
+                }
+
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .experience h3, .formation h3 {
+            margin-bottom: -5px;
+        }
+
+        .experience-item, .formation-item {
+            text-align: start;
+            padding: 0 20px;
+        }
+
+        .formation ol {
+            text-align: start;
+        }
+    }
 }
 
-.profil-img {
-    width: 180px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-.presentation {
-    border: 3px solid white;
-    border-radius: 20px;
-    padding: 20px;
-    padding-top: 100px;
-    margin-top: -100px;
+footer {
+    margin: 20px;
 }
 
 /* Mobile (paysage) et petits écrans */
 @media (min-width: 481px) {
-    /* Tes styles ici */
+    .container {
+        .container-left {
+            .header, .contact-info, .languages, .loisirs {
+                max-width: 444px;
+                margin: 10px auto;
+        }
+    }
+        .container-right {
+            .competences, .experience, .formation {
+                max-width: 444px;
+                margin: 10px auto;
+            }
+        }
+    }
 }
 
 /* Tablettes (768px et +) */
 @media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-    .container-left {
-        width: 30%;
-    }
-    .container-right {
-        width: 70%;
-    }
+
 }
 
 /* Petits écrans desktop (1024px et +) */
 @media (min-width: 1024px) {
-    /* Tes styles ici */
+    .container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 2fr;
+
+        .container-left {
+            margin: 10px;
+
+            /* .header, .contact-info, .languages, .loisirs {
+                max-width: 444px;
+                margin: 10px auto;
+            } */
+        }
+        .wave {
+            display: none;
+        }
+        .container-right {
+            margin: 10px;
+            border-radius: 25px;
+            /* padding: 0; */
+
+            .competences, .experience, .formation {
+                max-width: none;
+                margin: 0 20px;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                max-width: 260px;
+                text-align: start;
+                padding: 10px 20px;
+            }
+
+            .hardskills {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .softskills {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .formation ol {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                padding-left: 30px;
+            }
+        }
+    }
 }
 
 /* Grands écrans desktop (1200px et +) */
 @media (min-width: 1200px) {
-    /* Tes styles ici */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
