@@ -3,46 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="CV de Tom Charmasson, Développeur Web"
-        />
+        <meta name="description" content="CV de Tom Charmasson, Développeur Web" />
+        <meta name="author" content="Tom Charmasson" />
+        <meta property="og:title" content="Tom Charmasson - Développeur web" />
+        <meta property="og:description" content="CV de Tom Charmasson, Développeur Web" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ton-site.com" />
+        <meta property="og:image" content="https://ton-site.com/images/profil.webp" />
         <title>Tom Charmasson - Développeur web</title>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
         <link rel="stylesheet" href="styles.css" />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-
-        <script
-            src="https://kit.fontawesome.com/2b5512d3df.js"
-            crossorigin="anonymous"
-        ></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/2b5512d3df.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <div class="container">
+        <main class="container">
             <div class="container-left">
                 <header class="header">
-                    <p>Tom Charmasson</p>
+                    <p class="name">Tom Charmasson</p>
                     <h1>Développeur Web</h1>
-                    <img
-                        src="./images/profil.webp"
-                        alt="Tom Charmasson"
-                        class="profil-img"
-                    />
+                    <figure>
+                        <img src="./images/profil.webp" alt="Tom Charmasson" class="profil-img" loading="lazy" />
+                    </figure>
                     <p class="presentation">
-                        Passionné par le monde de la Tech, je suis à la
-                        recherche d’une nouvelle expérience enrichissante. J’ai
-                        une envie inépuisable d’apprendre, de comprendre et de
-                        créer. J’adore partager mes passions, collaborer et
-                        participer à des projets communs.
+                        Passionné par le monde de la Tech, je suis à la recherche d’une nouvelle expérience enrichissante. J’ai une envie inépuisable d’apprendre, de comprendre et de créer. J’adore partager mes passions, collaborer et participer à des projets communs.
                     </p>
                 </header>
-
                 <div class="contact-info">
                     <div class="contact-info_block">
                         <i class="fa-solid fa-location-dot"></i>
@@ -54,23 +43,17 @@
                     </div>
                     <div class="contact-info_block">
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:tomcharmasson@gmail.com"
-                            >tomcharmasson@gmail.com</a
-                        >
+                        <a href="mailto:tomcharmasson@gmail.com">tomcharmasson@gmail.com</a>
                     </div>
                     <div class="contact-info_block">
                         <i class="fa-brands fa-linkedin"></i>
-                        <a
-                            href="https://www.linkedin.com/in/tom-charmasson-4036ba131/"
-                            >LinkedIn</a
-                        >
+                        <a href="https://www.linkedin.com/in/tom-charmasson-4036ba131/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                     <div class="contact-info_block">
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/TomCharmasson">GitHub</a>
+                        <a href="https://github.com/TomCharmasson" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
-
                 <section class="languages">
                     <h2>Langues</h2>
                     <div class="languages-container">
@@ -96,7 +79,6 @@
                         </div>
                     </div>
                 </section>
-
                 <section class="loisirs">
                     <h2>Loisirs</h2>
                     <div class="loisirs-container">
@@ -109,93 +91,72 @@
                     </div>
                 </section>
             </div>
-            <svg
-                class="wave"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 320"
-            >
-                <path
-                    fill="#ffffff"
-                    fill-opacity="1"
-                    d="M0,192L80,186.7C160,181,320,171,480,176C640,181,800,203,960,202.7C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-                ></path>
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,176C640,181,800,203,960,202.7C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
             </svg>
             <div class="container-right">
                 <section class="competences">
                     <h2>Compétences</h2>
                     <div class="line"></div>
-
                     <h3>Hard Skills</h3>
                     <ul class="hardskills">
-                        <div class="hardskills_block">
+                        <li class="hardskills_block">
                             <img src="./images/css.png" alt="CSS3 icon" />
-                            <li class="hardskills_competence">
-                                HTML / CSS / Sass / Bootstrap 5
-                            </li>
-                        </div>
-                        <div class="hardskills_block">
+                            <span>HTML / CSS / Sass / Bootstrap 5</span>
+                        </li>
+                        <li class="hardskills_block">
                             <img src="./images/js.webp" alt="JavaScript icon" />
-                            <li class="hardskills_competence">JavaScript</li>
-                        </div>
-                        <div class="hardskills_block">
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="hardskills_block">
                             <img src="./images/typo3.png" alt="Typo3 icon" />
-                            <li class="hardskills_competence">CMS Typo3</li>
-                        </div>
-                        <div class="hardskills_block">
+                            <span>CMS Typo3</span>
+                        </li>
+                        <li class="hardskills_block">
                             <img src="./images/git.png" alt="Git icon" />
-                            <li class="hardskills_competence">
-                                Git / GitHub / Docker
-                            </li>
-                        </div>
-                        <div class="hardskills_block">
+                            <span>Git / GitHub / Docker</span>
+                        </li>
+                        <li class="hardskills_block">
                             <img src="./images/nodejs.png" alt="NodeJS icon" />
-                            <li class="hardskills_competence">
-                                Node.js / Express / MongoDB / SQL / MySQL
-                            </li>
-                        </div>
-                        <div class="hardskills_block">
+                            <span>Node.js / Express / MongoDB / SQL / MySQL</span>
+                        </li>
+                        <li class="hardskills_block">
                             <img src="./images/seo.png" alt="SEO icon" />
-                            <li class="hardskills_competence">
-                                API REST / SEO
-                            </li>
-                        </div>
+                            <span>API REST / SEO</span>
+                        </li>
                     </ul>
                     <h3>Soft Skills</h3>
                     <ul class="softskills">
-                        <div class="softskills_block">
+                        <li class="softskills_block">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <li class="softskills_competence">Curiosité</li>
-                        </div>
-                        <div class="softskills_block">
+                            <span>Curiosité</span>
+                        </li>
+                        <li class="softskills_block">
                             <i class="fa-solid fa-list-check"></i>
-                            <li class="softskills_competence">Organisation</li>
-                        </div>
-                        <div class="softskills_block">
+                            <span>Organisation</span>
+                        </li>
+                        <li class="softskills_block">
                             <i class="fa-solid fa-comments"></i>
-                            <li class="softskills_competence">Communication</li>
-                        </div>
-                        <div class="softskills_block">
+                            <span>Communication</span>
+                        </li>
+                        <li class="softskills_block">
                             <i class="fa-solid fa-sliders"></i>
-                            <li class="softskills_competence">Adaptation</li>
-                        </div>
-                        <div class="softskills_block">
+                            <span>Adaptation</span>
+                        </li>
+                        <li class="softskills_block">
                             <i class="fa-solid fa-user"></i>
-                            <li class="softskills_competence">Autonomie</li>
-                        </div>
+                            <span>Autonomie</span>
+                        </li>
                     </ul>
                 </section>
-
                 <section class="experience">
                     <h2>Expériences</h2>
                     <div class="experience-item">
                         <h3>Développeur Web | Centre de Gestion de la FPT du Tarn-et-Garonne (CDG82) | 2022 - 2024</h3>
-                        <p>
-                            Développement Front-end, intégration de chartes
-                            graphiques, gestion et développement sur CMS Typo3
-                        </p>
+                        <p>Développement Front-end, intégration de chartes graphiques, gestion et développement sur CMS Typo3</p>
                     </div>
                     <div class="experience-item">
-                        <h3>Programme Vacances-Travail Japon | 2024 -2025</h3>
+                        <h3>Programme Vacances-Travail Japon | 2024 - 2025</h3>
                         <p>Découverte culturelle, adaptation</p>
                     </div>
                     <div class="experience-item">
@@ -203,41 +164,29 @@
                         <p>Rigueur, organisation, relation client</p>
                     </div>
                 </section>
-
                 <section class="formation">
                     <h2>Formations</h2>
                     <div class="formation-item">
                         <h3>Développeur Web</h3>
                         <p>OpenClassrooms - 2022</p>
                         <ol>
-                            <li>
-                                Transformer une maquette en site web avec HTML
-                                et CSS
-                            </li>
+                            <li>Transformer une maquette en site web avec HTML et CSS</li>
                             <li>Optimiser un site web existant (SEO)</li>
-                            <li>
-                                Construire une API sécurisée pour une
-                                application web
-                            </li>
-                            <li>
-                                Dynamiser une page Web avec des animations CSS
-                            </li>
+                            <li>Construire une API sécurisée pour une application web</li>
+                            <li>Dynamiser une page Web avec des animations CSS</li>
                             <li>Construire un site e-commerce en JavaScript</li>
-                            <li>
-                                Créer un réseau social d'entreprise (Vue.js)
-                            </li>
+                            <li>Créer un réseau social d'entreprise (Vue.js)</li>
                         </ol>
                     </div>
                     <div class="formation-item">
-                        <h3>Licence Professionnelle Gestion et Développement des
-Organisations et des Services Sportifs et de Loisirs - 2017</h3>
+                        <h3>Licence Professionnelle Gestion et Développement des Organisations et des Services Sportifs et de Loisirs - 2017</h3>
                     </div>
                     <div class="formation-item">
                         <h3>BTS Négociation et Relation Client - 2015</h3>
                     </div>
                 </section>
             </div>
-        </div>
+        </main>
         <footer>
             <p>© 2025 Tom Charmasson - Développeur Web</p>
         </footer>
