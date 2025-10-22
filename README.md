@@ -21,4 +21,4 @@ Ce dépôt contient :
 ---
 
 ## 🚀 Comment voir mon CV ?
-1. **En ligne** : [Lien vers ton site déployé](https://tomcharmasson.github.io/mon-cv/).
+1. **En ligne** : https://tomcharmasson.github.io/CVtomcharmasson/ .
